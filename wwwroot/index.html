@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOBSMOM.COM</title>
+
+    <style>
+        body {
+            background: #000080;
+            color: #00ff00;
+            font-family: "Comic Sans MS", cursive;
+            margin: 0;
+            background-image: radial-gradient(#2222ff 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+
+        .wrapper {
+            width: 900px;
+            margin: 20px auto;
+            background: black;
+            border: 8px ridge hotpink;
+            padding: 20px;
+            box-shadow: 0 0 40px cyan;
+        }
+
+        h1 {
+            text-align: center;
+            color: yellow;
+            font-size: 72px;
+            margin-bottom: 0;
+            text-shadow: 5px 5px red;
+            animation: blink 1s infinite;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: cyan;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        marquee {
+            background: red;
+            color: yellow;
+            padding: 10px;
+            border: 4px outset white;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .nav {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+            .nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 10px 15px;
+                background: purple;
+                color: yellow;
+                text-decoration: none;
+                border: 3px outset white;
+                font-weight: bold;
+            }
+
+                .nav a:hover {
+                    background: lime;
+                    color: black;
+                }
+
+        .section {
+            margin: 30px 0;
+            padding: 15px;
+            border: 4px dotted cyan;
+            background: #111;
+        }
+
+        h2 {
+            color: hotpink;
+            border-bottom: 2px dashed yellow;
+            padding-bottom: 5px;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        .counter {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 28px;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            color: gray;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        .gifs {
+            text-align: center;
+            font-size: 42px;
+            margin: 20px 0;
+        }
+
+        .quote {
+            background: #220000;
+            border-left: 6px solid orange;
+            padding: 10px;
+            margin: 10px 0;
+            color: #ffcc66;
+        }
+
+        .warning {
+            text-align: center;
+            font-size: 30px;
+            color: orange;
+            margin: 20px 0;
+        }
+
+        .spark {
+            position: fixed;
+            pointer-events: none;
+            color: white;
+            animation: float 5s linear forwards;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1>BOBSMOM.COM</h1>
+
+        <p class="subtitle">
+            the internet's #1 source for Bob's extremely dateable mother
+        </p>
+
+        <div class="warning">
+            🚧 WEBSITE UNDER CONSTRUCTION SINCE 1999 🚧
+        </div>
+
+        <marquee scrollamount="12">
+            💖 YES WE ARE ALL CURRENTLY IN A RELATIONSHIP WITH BOB'S MOM 💖
+        </marquee>
+
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT MOM</a>
+            <a href="#">BOURBON REVIEWS</a>
+            <a href="#">ALEX HATE ZONE</a>
+            <a href="#">LOVE LETTERS</a>
+        </div>
+
+        <div class="gifs">
+            💘 🥃 🔥 💋 💿 🕺 🌈 🥃 💘
+        </div>
+
+        <div class="section">
+            <h2>ABOUT BOB'S MOM</h2>
+            <p>
+                she satisfies me in ways you can't comprehend
+            </p>
+
+            <div class="quote">
+                "you're so big!" — Bob's Mom, probably
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>RECENT BOB ACTIVITY</h2>
+
+            <p>✅ drank expensive bourbon from a coffee mug</p>
+            <p>✅ insulted alex</p>
+            <p>✅ attended a meeting</p>
+        </div>
+
+        <div class="section">
+            <h2>ALEX HATE ZONE</h2>
+
+            <div class="quote">
+                "alex couldn't fight his way out of a wet paper bag." — Bob
+            </div>
+
+            <div class="quote">
+                "that guy puts ice in bourbon." — Bob
+            </div>
+
+            <div class="quote">
+                "alex parks like he's fleeing a crime scene." — Bob
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>GUESTBOOK</h2>
+
+            <p><b>BukowitzKing69:</b> Bob's mom made me banana pudding. we're basically married now.</p>
+
+            <p><b>420MikeSmith:</b> Bob yelled at me for 45 minutes and honestly i respect him more now.</p>
+
+            <p><b>seantt:</b> this website crashes netscape navigator and i love it</p>
+        </div>
+
+        <div class="gifs">
+            ⚡ 💻 🍺 💥 🌈 🛸 🔥 💖 ⚡
+        </div>
+
+        <div class="counter">
+            VISITORS: 000069420
+        </div>
+
+        <div class="footer">
+            <p>best viewed on internet explorer 5.0 at 800x600</p>
+            <p>© 1999 BOBS MOM ENTERPRISES</p>
+        </div>
+
+    </div>
+
+    <script>
+  function sparkle() {
+    const s = document.createElement("div");
+    s.className = "spark";
+    s.innerHTML = ["✨","💖","⭐","🥃","💥"][Math.floor(Math.random()*5)];
+    s.style.left = Math.random() * window.innerWidth + "px";
+    s.style.fontSize = (Math.random() * 20 + 15) + "px";
+    document.body.appendChild(s);
+
+    setTimeout(() => {
+      s.remove();
+    }, 5000);
+  }
+
+  setInterval(sparkle, 250);
+    </script>
+
+</body>
+</html>
