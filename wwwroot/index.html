@@ -149,10 +149,6 @@
             💖 YES WE ARE ALL CURRENTLY IN A RELATIONSHIP WITH BOB'S MOM 💖
         </marquee>
 
-        <div class="nav">
-            <button id="play-btn">Click Me!</button>
-        </div>
-
         <div class="gifs">
             💘 🥃 🔥 💋 💿 🕺 🌈 🥃 💘
         </div>
@@ -251,7 +247,7 @@
 
     await player.load(filePath);
 
-    document.getElementById("play-btn").addEventListener("click", () => {
+    window.addEventListener("click", () => {
         if (!audioContext) {
             audioContext = new AudioContext();
         }
