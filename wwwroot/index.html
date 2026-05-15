@@ -150,11 +150,7 @@
         </marquee>
 
         <div class="nav">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT MOM</a>
-            <a href="#">BOURBON REVIEWS</a>
-            <a href="#">ALEX HATE ZONE</a>
-            <a href="#">LOVE LETTERS</a>
+            <a href="./AudioPlayer.html">Audio Player</a>
         </div>
 
         <div class="gifs">
@@ -242,3 +238,14 @@
 
 </body>
 </html>
+
+<script type="module">
+    import { ModPlayer } from 'https://atornblad.se/files/js-mod-player/player.js';
+
+    const player = new ModPlayer(new AudioContext());
+    var filePath = "./audio/take_on_me.mod";
+
+    await player.load(filePath);
+
+    window.addEventListener('click', () => player.play());
+</script>

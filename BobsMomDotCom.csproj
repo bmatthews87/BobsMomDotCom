@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\audio\" />
   </ItemGroup>
 
 </Project>
