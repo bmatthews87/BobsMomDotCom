@@ -150,7 +150,7 @@
         </marquee>
 
         <div class="nav">
-            <a href="./AudioPlayer.html">Audio Player</a>
+            <button id="play-btn">Click Me!</button>
         </div>
 
         <div class="gifs">
@@ -244,14 +244,14 @@
 <script type="module">
     let audioContext;
 
-    import { ModPlayer } from 'https://atornblad.se/files/js-mod-player/player.js';
+    import { ModPlayer } from './js/player.js';
 
     const player = new ModPlayer(new AudioContext());
     var filePath = "./audio/take_on_me.mod";
 
     await player.load(filePath);
 
-    window.addEventListener('load', () => {
+    document.getElementById("play-btn").addEventListener("click", () => {
         if (!audioContext) {
             audioContext = new AudioContext();
         }
@@ -260,5 +260,5 @@
             audioContext.resume();
         }
         player.play()
-    });
+    })
 </script>
