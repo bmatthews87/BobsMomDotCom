@@ -251,7 +251,7 @@
 
     await player.load(filePath);
 
-    window.addEventListener('click', () => {
+    window.addEventListener('onload', () => {
         if (!audioContext) {
             audioContext = new AudioContext();
         }
